@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import UserUpdateForm from "./UserUpdateForm";
-import UserPasswordForm from "./UserPasswordForm";
+// import UserPasswordForm from "./UserPasswordForm";
 import UserAddressForm from "./UserAddressForm";
 import PastOrders from "./PastOrders";
 
 const Profile = () => {
   const { auth } = useSelector((state) => state);
   const [profileIsVisible, setProfileIsVisible] = useState(true);
-  const [passwordIsVisible, setPasswordIsVisible] = useState(false);
+  // const [passwordIsVisible, setPasswordIsVisible] = useState(false);
   const [addressIsVisible, setAddressIsVisible] = useState(false);
   const [pastOrderIsVisible, setPastOrderIsVisible] = useState(false);
 
@@ -17,22 +17,22 @@ const Profile = () => {
   const toggleForm = useCallback((form) => {
     if (form === "Profile") {
       setProfileIsVisible(true);
-      setPasswordIsVisible(false);
+      // setPasswordIsVisible(false);
       setAddressIsVisible(false);
       setPastOrderIsVisible(false);
-    } else if (form === "Password") {
-      setProfileIsVisible(false);
-      setPasswordIsVisible(true);
-      setAddressIsVisible(false);
-      setPastOrderIsVisible(false);
+    // } else if (form === "Password") {
+    //   setProfileIsVisible(false);
+    //   // setPasswordIsVisible(true);
+    //   setAddressIsVisible(false);
+    //   setPastOrderIsVisible(false);
     } else if (form === "Address") {
       setProfileIsVisible(false);
-      setPasswordIsVisible(false);
+      // setPasswordIsVisible(false);
       setAddressIsVisible(true);
       setPastOrderIsVisible(false);
     } else if (form === "Past Orders") {
       setProfileIsVisible(false);
-      setPasswordIsVisible(false);
+      // setPasswordIsVisible(false);
       setAddressIsVisible(false);
       setPastOrderIsVisible(true);
     }
@@ -54,7 +54,7 @@ const Profile = () => {
       </div>
 
       {profileIsVisible && <UserUpdateForm />}
-      {passwordIsVisible && <UserPasswordForm />}
+      {/*{passwordIsVisible && <UserPasswordForm />}*/}
       {addressIsVisible && <UserAddressForm />}
       {pastOrderIsVisible && <PastOrders />}
     </div>

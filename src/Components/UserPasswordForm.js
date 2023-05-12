@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateUser } from "../store/users";
 import { TextField, Button } from "@mui/material";
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
 import { useNavigate } from "react-router-dom";
 
 const UserPasswordForm = () => {
@@ -23,7 +23,7 @@ const UserPasswordForm = () => {
     ev.preventDefault();
     const { id } = auth;
     const hash = auth.password;
-    const isMatch = bcrypt.compareSync(currentPassword, hash);
+    // const isMatch = bcrypt.compareSync(currentPassword, hash);
     try {
       if (!isMatch) {
         setErrorMessage("Current password is incorrect");
