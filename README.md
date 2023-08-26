@@ -1,7 +1,9 @@
 Welcome to Saucy Slices!
 
 Home Page:
-![saucy_slices_homepage.png](static%2Fsaucy_slices_homepage.png)
+
+<img src="static/saucy_slices_homepage.png" alt="Saucy Slices Home Page" width="400" height="300">
+
 
 
 
