@@ -1,6 +1,6 @@
 Disclaimer: The following images were used for educational and web development purposes only; no actual food items can be purchased.
 
-Welcome to Saucy Slices!
+# Welcome to Saucy Slices!
 
 This marked one of my early projects, inspired by the model set by Papa John's.
 
