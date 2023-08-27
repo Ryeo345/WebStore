@@ -11,7 +11,7 @@ A combination of CSS styling and MUI styling was used to design the layout.
 Images were acquired through web scraping methods, collecting data from HTTP requests, and Insomnia was employed to transform this data into JSON format. The JSON data was subsequently parsed and iterated through to populate the Product database model using Sequelize and JavaScript. On the frontend, API GET routes were employed to interact with the backend, retrieving data stored in the PostgreSQL database. This retrieved data was then displayed on the frontend, showcasing the array of products available.
 
 
-<img src="static/saucy_slices_homepage.png" alt="Saucy Slices Home Page" width="250" height="625">
+<img src="static/saucy_slices_homepage.png" alt="Saucy Slices Home Page" width="400" height="1000">
 
 API POST routes were employed to link the signup form and the backend database, facilitating the transmission and storage of user data. JSON Web Tokens (JWT) were utilized to authenticate registered users during the login process on the website.
 
